@@ -65,7 +65,10 @@ public class PostAndUserTest {
 		User Bill = new User("Bill", "Cats");
 		//System.out.println(Bill.getUid());
 		//System.out.println(Sally.getUid());
+		Integer billnum = Bill.getUid();
+		System.out.println("billnum = " + billnum);
 		assertFalse("Uid all messed", Bill.getUid() == Sally.getUid() );
+		assertTrue("Uid not there", billnum >= 0);
 		//TODO make one for posts also
 		
 	}
